@@ -1,4 +1,4 @@
-name: Our first dbt PR job
+name: My dbt build ci/cd pipeline
 
 on:
   pull_request:
