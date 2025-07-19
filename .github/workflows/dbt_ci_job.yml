@@ -38,7 +38,7 @@ jobs:
         run: dbt deps
 
       - name: dbt build
-        run: dbt build --full-refresh --profiles-dir ./
+        run: dbt build #--full-refresh --profiles-dir ./
         env:
           SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
           SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
