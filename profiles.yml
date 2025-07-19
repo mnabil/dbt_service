@@ -1,0 +1,13 @@
+default:
+  outputs:
+    dev:
+      account: "{{ env.SNOWFLAKE_ACCOUNT }}"
+      database: "{{ env.SNOWFLAKE_DB }}"
+      schema: "{{ env.SNOWFLAKE_SCHEMA }}"
+      password: "{{ env.SNOWFLAKE_PASSWORD }}"
+      role: "{{ env.SNOWFLAKE_ROLE }}"
+      threads: 4
+      type: snowflake
+      user: "{{ env.SNOWFLAKE_USER }}"
+      warehouse: COMPUTE_WH
+  target: dev
