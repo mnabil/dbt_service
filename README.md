@@ -43,3 +43,7 @@ MART : containing our aggregations & reports for analyis
 
 # to clean our environment if we want to start a run a clean run
  `dbt clean`
+
+
+Best,
+Mahmoud
