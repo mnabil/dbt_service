@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: RAW_ACTIVITY_LOGS_EXTERNAL_STAGE # This is the external stage for raw activity logs
+    database: ACTIVITY_LOGS_DB
+    schema: RAW
+    loader: s3
+    tables:
+      - name: RAW_ACTIVITY_LOGS
+        external:
+          location: "@ACTIVITY_LOGS_DB.RAW.RAW_ACTIVITY_LOGS_STAGE"
+          file_format: "( type = json )"
+        description: "External stage for raw activity logs from Kandji"

@@ -1,0 +1,725 @@
+[0m15:11:43.818938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106378fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e3a380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e39cc0>]}
+
+
+============================== 15:11:43.821451 | c936c5cf-6ea3-4427-a2ca-189029ce2270 ==============================
+[0m15:11:43.821451 [info ] [MainThread]: Running with dbt=1.10.4
+[0m15:11:43.821727 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/mahmoud/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:11:43.877586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c936c5cf-6ea3-4427-a2ca-189029ce2270', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049a01c0>]}
+[0m15:11:43.916652 [debug] [MainThread]: Set downloads directory='/var/folders/vd/y80s0tk92fdgbw6f_klxwk9h0000gn/T/dbt-downloads-u10khh2q'
+[0m15:11:43.916895 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:11:44.068247 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:11:44.069049 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:11:44.152905 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:11:44.165585 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json
+[0m15:11:44.449678 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json 200
+[0m15:11:44.454058 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:11:44.847017 [info ] [MainThread]: Installed from version 1.3.0
+[0m15:11:44.847307 [info ] [MainThread]: Up to date!
+[0m15:11:44.847518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c936c5cf-6ea3-4427-a2ca-189029ce2270', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065d1cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065fc850>]}
+[0m15:11:44.847743 [info ] [MainThread]: Installing dbt-labs/dbt_external_tables
+[0m15:11:45.259284 [info ] [MainThread]: Installed from version 0.11.1
+[0m15:11:45.259782 [info ] [MainThread]: Up to date!
+[0m15:11:45.260077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c936c5cf-6ea3-4427-a2ca-189029ce2270', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065d1cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108977ca0>]}
+[0m15:11:45.263236 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.4767218, "process_in_blocks": "0", "process_kernel_time": 0.189256, "process_mem_max_rss": "112738304", "process_out_blocks": "0", "process_user_time": 0.751035}
+[0m15:11:45.263626 [debug] [MainThread]: Command `dbt deps` succeeded at 15:11:45.263544 after 1.48 seconds
+[0m15:11:45.263913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106378fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065d1cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065da0b0>]}
+[0m15:11:45.264169 [debug] [MainThread]: Flushing usage events
+[0m15:11:45.487400 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:11:48.288210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d79060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109841360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109841a20>]}
+
+
+============================== 15:11:48.289794 | 6d4b24ad-e150-4a1d-a69d-f4340c2e8337 ==============================
+[0m15:11:48.289794 [info ] [MainThread]: Running with dbt=1.10.4
+[0m15:11:48.290056 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mahmoud/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:11:48.532794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063c05b0>]}
+[0m15:11:48.559839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adc25f0>]}
+[0m15:11:48.561055 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m15:11:48.630041 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m15:11:48.630495 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:11:48.630671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba075b0>]}
+[0m15:11:49.501317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c572410>]}
+[0m15:11:49.559458 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:11:49.560623 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:11:49.567762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c573280>]}
+[0m15:11:49.568012 [info ] [MainThread]: Found 8 models, 1 seed, 3 data tests, 3 sources, 644 macros
+[0m15:11:49.568192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c57e710>]}
+[0m15:11:49.568855 [info ] [MainThread]: 
+[0m15:11:49.569011 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:11:49.569139 [info ] [MainThread]: 
+[0m15:11:49.569343 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:11:49.569698 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB'
+[0m15:11:49.622795 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB"
+[0m15:11:49.623034 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB: show terse schemas in database ACTIVITY_LOGS_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB"} */
+[0m15:11:49.623184 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:50.214614 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.591 seconds
+[0m15:11:50.225303 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB, now list_ACTIVITY_LOGS_DB_STG)
+[0m15:11:50.226464 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_RAW'
+[0m15:11:50.227726 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_MART'
+[0m15:11:50.245363 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_STG"
+[0m15:11:50.248511 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_RAW"
+[0m15:11:50.249825 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_MART"
+[0m15:11:50.250014 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_STG: show objects in ACTIVITY_LOGS_DB.STG
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_STG"} */;
+[0m15:11:50.250164 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_RAW: show objects in ACTIVITY_LOGS_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_RAW"} */;
+[0m15:11:50.250304 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_MART: show objects in ACTIVITY_LOGS_DB.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_MART"} */;
+[0m15:11:50.250848 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:50.251230 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:50.390422 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.140 seconds
+[0m15:11:50.745832 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.494 seconds
+[0m15:11:50.861206 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.610 seconds
+[0m15:11:50.867264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c51b280>]}
+[0m15:11:50.875790 [debug] [Thread-1 (]: Began running node seed.dbt_service.quarantine_seed
+[0m15:11:50.876997 [info ] [Thread-1 (]: 1 of 1 START seed file RAW.quarantine_seed ..................................... [RUN]
+[0m15:11:50.877977 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_STG, now seed.dbt_service.quarantine_seed)
+[0m15:11:50.878648 [debug] [Thread-1 (]: Began compiling node seed.dbt_service.quarantine_seed
+[0m15:11:50.879342 [debug] [Thread-1 (]: Began executing node seed.dbt_service.quarantine_seed
+[0m15:11:50.919098 [debug] [Thread-1 (]: Using snowflake connection "seed.dbt_service.quarantine_seed"
+[0m15:11:50.919453 [debug] [Thread-1 (]: On seed.dbt_service.quarantine_seed: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.dbt_service.quarantine_seed"} */
+[0m15:11:51.028572 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.109 seconds
+[0m15:11:51.030076 [debug] [Thread-1 (]: Using snowflake connection "seed.dbt_service.quarantine_seed"
+[0m15:11:51.030994 [debug] [Thread-1 (]: On seed.dbt_service.quarantine_seed: truncate table "ACTIVITY_LOGS_DB"."RAW"."QUARANTINE_SEED"
+  
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.dbt_service.quarantine_seed"} */;
+[0m15:11:51.279979 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.248 seconds
+[0m15:11:51.281715 [debug] [Thread-1 (]: Using snowflake connection "seed.dbt_service.quarantine_seed"
+[0m15:11:51.282761 [debug] [Thread-1 (]: On seed.dbt_service.quarantine_seed: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.dbt_service.quarantine_seed"} */
+[0m15:11:51.465826 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.182 seconds
+[0m15:11:51.490577 [debug] [Thread-1 (]: Using snowflake connection "seed.dbt_service.quarantine_seed"
+[0m15:11:51.491547 [debug] [Thread-1 (]: On seed.dbt_service.quarantine_seed: BEGIN
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.dbt_service.quarantine_seed"} */
+[0m15:11:51.610794 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.119 seconds
+[0m15:11:51.612702 [debug] [Thread-1 (]: Using snowflake connection "seed.dbt_service.quarantine_seed"
+[0m15:11:51.614057 [debug] [Thread-1 (]: On seed.dbt_service.quarantine_seed: insert into ACTIVITY_LOGS_DB.RAW.quarantine_seed (company_id) values
+            (%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s)
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.dbt_service.quarantine_seed"} */...
+[0m15:11:52.071078 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.456 seconds
+[0m15:11:52.072955 [debug] [Thread-1 (]: Using snowflake connection "seed.dbt_service.quarantine_seed"
+[0m15:11:52.074100 [debug] [Thread-1 (]: On seed.dbt_service.quarantine_seed: COMMIT
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.dbt_service.quarantine_seed"} */
+[0m15:11:52.313568 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.238 seconds
+[0m15:11:52.328274 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_service.quarantine_seed"
+[0m15:11:52.359963 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6d4b24ad-e150-4a1d-a69d-f4340c2e8337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af0b700>]}
+[0m15:11:52.360574 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file RAW.quarantine_seed ................................. [[32mINSERT 10[0m in 1.48s]
+[0m15:11:52.361129 [debug] [Thread-1 (]: Finished running node seed.dbt_service.quarantine_seed
+[0m15:11:52.362215 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:11:52.362580 [debug] [MainThread]: Connection 'seed.dbt_service.quarantine_seed' was left open.
+[0m15:11:52.362880 [debug] [MainThread]: On seed.dbt_service.quarantine_seed: Close
+[0m15:11:52.500186 [debug] [MainThread]: Connection 'list_ACTIVITY_LOGS_DB_RAW' was left open.
+[0m15:11:52.501458 [debug] [MainThread]: On list_ACTIVITY_LOGS_DB_RAW: Close
+[0m15:11:52.638395 [debug] [MainThread]: Connection 'list_ACTIVITY_LOGS_DB_MART' was left open.
+[0m15:11:52.639613 [debug] [MainThread]: On list_ACTIVITY_LOGS_DB_MART: Close
+[0m15:11:52.785137 [info ] [MainThread]: 
+[0m15:11:52.786520 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 3.22 seconds (3.22s).
+[0m15:11:52.788810 [debug] [MainThread]: Command end result
+[0m15:11:52.837860 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:11:52.839257 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:11:52.843852 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/run_results.json
+[0m15:11:52.844100 [info ] [MainThread]: 
+[0m15:11:52.844388 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:11:52.844604 [info ] [MainThread]: 
+[0m15:11:52.844835 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:11:52.846592 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 4.589414, "process_in_blocks": "0", "process_kernel_time": 0.189805, "process_mem_max_rss": "168165376", "process_out_blocks": "0", "process_user_time": 2.218127}
+[0m15:11:52.846874 [debug] [MainThread]: Command `dbt seed` succeeded at 15:11:52.846820 after 4.59 seconds
+[0m15:11:52.847125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d79060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c572200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fd83d0>]}
+[0m15:11:52.847369 [debug] [MainThread]: Flushing usage events
+[0m15:11:53.065161 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:06.305054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10385d000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048f78b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048f71f0>]}
+
+
+============================== 15:12:06.306684 | 33194a72-ed11-48dd-9c90-f71769ce2179 ==============================
+[0m15:12:06.306684 [info ] [MainThread]: Running with dbt=1.10.4
+[0m15:12:06.306943 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mahmoud/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt compile', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:06.477020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33194a72-ed11-48dd-9c90-f71769ce2179', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10548e650>]}
+[0m15:12:06.504025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '33194a72-ed11-48dd-9c90-f71769ce2179', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105362590>]}
+[0m15:12:06.504385 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m15:12:06.567939 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m15:12:06.650704 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:12:06.650911 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:12:06.683629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '33194a72-ed11-48dd-9c90-f71769ce2179', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106859a80>]}
+[0m15:12:06.743598 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:12:06.744643 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:12:06.749695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '33194a72-ed11-48dd-9c90-f71769ce2179', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067cea70>]}
+[0m15:12:06.749928 [info ] [MainThread]: Found 8 models, 1 seed, 3 data tests, 3 sources, 644 macros
+[0m15:12:06.750089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '33194a72-ed11-48dd-9c90-f71769ce2179', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106837160>]}
+[0m15:12:06.750878 [info ] [MainThread]: 
+[0m15:12:06.751035 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:12:06.751161 [info ] [MainThread]: 
+[0m15:12:06.751367 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:12:06.753735 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_STG'
+[0m15:12:06.753975 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_MART'
+[0m15:12:06.754230 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_RAW'
+[0m15:12:06.778843 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_STG"
+[0m15:12:06.779116 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_MART"
+[0m15:12:06.779304 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_RAW"
+[0m15:12:06.779440 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_STG: show objects in ACTIVITY_LOGS_DB.STG
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_STG"} */;
+[0m15:12:06.779604 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_MART: show objects in ACTIVITY_LOGS_DB.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_MART"} */;
+[0m15:12:06.779748 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_RAW: show objects in ACTIVITY_LOGS_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_RAW"} */;
+[0m15:12:06.779881 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:06.780006 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:06.780124 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:07.330921 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.551 seconds
+[0m15:12:07.351490 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.571 seconds
+[0m15:12:07.381835 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.602 seconds
+[0m15:12:07.388602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '33194a72-ed11-48dd-9c90-f71769ce2179', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10226c1c0>]}
+[0m15:12:07.395468 [debug] [Thread-1 (]: Began running node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:07.396352 [debug] [Thread-2 (]: Began running node seed.dbt_service.quarantine_seed
+[0m15:12:07.397975 [debug] [Thread-3 (]: Began running node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_company_id.b27477095d
+[0m15:12:07.398728 [debug] [Thread-4 (]: Began running node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_date_enrolled.ca94ba132f
+[0m15:12:07.399646 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_STG, now model.dbt_service.stg_activity_logs_flattened)
+[0m15:12:07.400397 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_MART, now seed.dbt_service.quarantine_seed)
+[0m15:12:07.401131 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_RAW, now test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_company_id.b27477095d)
+[0m15:12:07.402040 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_date_enrolled.ca94ba132f'
+[0m15:12:07.402750 [debug] [Thread-1 (]: Began compiling node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:07.403414 [debug] [Thread-2 (]: Began compiling node seed.dbt_service.quarantine_seed
+[0m15:12:07.404127 [debug] [Thread-3 (]: Began compiling node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_company_id.b27477095d
+[0m15:12:07.404738 [debug] [Thread-4 (]: Began compiling node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_date_enrolled.ca94ba132f
+[0m15:12:07.421233 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_service.stg_activity_logs_flattened"
+[0m15:12:07.424114 [debug] [Thread-2 (]: Began executing node seed.dbt_service.quarantine_seed
+[0m15:12:07.434471 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_company_id.b27477095d"
+[0m15:12:07.437846 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_date_enrolled.ca94ba132f"
+[0m15:12:07.438481 [debug] [Thread-2 (]: Finished running node seed.dbt_service.quarantine_seed
+[0m15:12:07.439075 [debug] [Thread-2 (]: Began running node test.dbt_service.source_unique_stg_activity_logs_stg_activity_logs_cleaned_company_id.aabc1e991c
+[0m15:12:07.439515 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_service.quarantine_seed, now test.dbt_service.source_unique_stg_activity_logs_stg_activity_logs_cleaned_company_id.aabc1e991c)
+[0m15:12:07.439902 [debug] [Thread-2 (]: Began compiling node test.dbt_service.source_unique_stg_activity_logs_stg_activity_logs_cleaned_company_id.aabc1e991c
+[0m15:12:07.444659 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_service.source_unique_stg_activity_logs_stg_activity_logs_cleaned_company_id.aabc1e991c"
+[0m15:12:07.445053 [debug] [Thread-1 (]: Began executing node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:07.445631 [debug] [Thread-1 (]: Finished running node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:07.445915 [debug] [Thread-3 (]: Began executing node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_company_id.b27477095d
+[0m15:12:07.446542 [debug] [Thread-3 (]: Finished running node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_company_id.b27477095d
+[0m15:12:07.446867 [debug] [Thread-3 (]: Began running node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:07.447051 [debug] [Thread-2 (]: Began executing node test.dbt_service.source_unique_stg_activity_logs_stg_activity_logs_cleaned_company_id.aabc1e991c
+[0m15:12:07.447224 [debug] [Thread-4 (]: Began executing node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_date_enrolled.ca94ba132f
+[0m15:12:07.447429 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_company_id.b27477095d, now model.dbt_service.stg_activity_logs_quarantined)
+[0m15:12:07.447723 [debug] [Thread-2 (]: Finished running node test.dbt_service.source_unique_stg_activity_logs_stg_activity_logs_cleaned_company_id.aabc1e991c
+[0m15:12:07.448007 [debug] [Thread-4 (]: Finished running node test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_date_enrolled.ca94ba132f
+[0m15:12:07.448194 [debug] [Thread-3 (]: Began compiling node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:07.479229 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_service.stg_activity_logs_quarantined"
+[0m15:12:07.479809 [debug] [Thread-3 (]: Began executing node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:07.480149 [debug] [Thread-3 (]: Finished running node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:07.480490 [debug] [Thread-1 (]: Began running node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:07.480752 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_service.stg_activity_logs_flattened, now model.dbt_service.stg_activity_logs_cleaned)
+[0m15:12:07.481009 [debug] [Thread-1 (]: Began compiling node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:07.482806 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_service.stg_activity_logs_cleaned"
+[0m15:12:07.483466 [debug] [Thread-1 (]: Began executing node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:07.483744 [debug] [Thread-1 (]: Finished running node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:07.484058 [debug] [Thread-4 (]: Began running node model.dbt_service.total_companies_march_android
+[0m15:12:07.484232 [debug] [Thread-3 (]: Began running node model.dbt_service.total_devices_daily_april
+[0m15:12:07.484425 [debug] [Thread-2 (]: Began running node model.dbt_service.total_devices_eu_north_america
+[0m15:12:07.484616 [debug] [Thread-1 (]: Began running node model.dbt_service.total_devices_oracle_app
+[0m15:12:07.484790 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_service.source_not_null_stg_activity_logs_stg_activity_logs_cleaned_date_enrolled.ca94ba132f, now model.dbt_service.total_companies_march_android)
+[0m15:12:07.485037 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_service.stg_activity_logs_quarantined, now model.dbt_service.total_devices_daily_april)
+[0m15:12:07.485233 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_service.source_unique_stg_activity_logs_stg_activity_logs_cleaned_company_id.aabc1e991c, now model.dbt_service.total_devices_eu_north_america)
+[0m15:12:07.485418 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_service.stg_activity_logs_cleaned, now model.dbt_service.total_devices_oracle_app)
+[0m15:12:07.485598 [debug] [Thread-4 (]: Began compiling node model.dbt_service.total_companies_march_android
+[0m15:12:07.485770 [debug] [Thread-3 (]: Began compiling node model.dbt_service.total_devices_daily_april
+[0m15:12:07.485950 [debug] [Thread-2 (]: Began compiling node model.dbt_service.total_devices_eu_north_america
+[0m15:12:07.486125 [debug] [Thread-1 (]: Began compiling node model.dbt_service.total_devices_oracle_app
+[0m15:12:07.487669 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_service.total_companies_march_android"
+[0m15:12:07.489130 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_service.total_devices_daily_april"
+[0m15:12:07.490639 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_service.total_devices_eu_north_america"
+[0m15:12:07.492053 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_service.total_devices_oracle_app"
+[0m15:12:07.492516 [debug] [Thread-2 (]: Began executing node model.dbt_service.total_devices_eu_north_america
+[0m15:12:07.492682 [debug] [Thread-4 (]: Began executing node model.dbt_service.total_companies_march_android
+[0m15:12:07.492845 [debug] [Thread-3 (]: Began executing node model.dbt_service.total_devices_daily_april
+[0m15:12:07.493037 [debug] [Thread-1 (]: Began executing node model.dbt_service.total_devices_oracle_app
+[0m15:12:07.493314 [debug] [Thread-2 (]: Finished running node model.dbt_service.total_devices_eu_north_america
+[0m15:12:07.493582 [debug] [Thread-4 (]: Finished running node model.dbt_service.total_companies_march_android
+[0m15:12:07.493838 [debug] [Thread-3 (]: Finished running node model.dbt_service.total_devices_daily_april
+[0m15:12:07.494089 [debug] [Thread-1 (]: Finished running node model.dbt_service.total_devices_oracle_app
+[0m15:12:07.494612 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:07.494782 [debug] [MainThread]: Connection 'model.dbt_service.total_devices_oracle_app' was left open.
+[0m15:12:07.494923 [debug] [MainThread]: On model.dbt_service.total_devices_oracle_app: Close
+[0m15:12:07.623986 [debug] [MainThread]: Connection 'model.dbt_service.total_devices_eu_north_america' was left open.
+[0m15:12:07.624298 [debug] [MainThread]: On model.dbt_service.total_devices_eu_north_america: Close
+[0m15:12:07.755680 [debug] [MainThread]: Connection 'model.dbt_service.total_devices_daily_april' was left open.
+[0m15:12:07.757330 [debug] [MainThread]: On model.dbt_service.total_devices_daily_april: Close
+[0m15:12:07.899105 [debug] [MainThread]: Connection 'model.dbt_service.total_companies_march_android' was properly closed.
+[0m15:12:07.901973 [debug] [MainThread]: Command end result
+[0m15:12:07.951812 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:12:07.952987 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:12:07.958218 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/run_results.json
+[0m15:12:07.959915 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.6859349, "process_in_blocks": "0", "process_kernel_time": 0.142998, "process_mem_max_rss": "154370048", "process_out_blocks": "0", "process_user_time": 1.312162}
+[0m15:12:07.960199 [debug] [MainThread]: Command `dbt compile` succeeded at 15:12:07.960147 after 1.69 seconds
+[0m15:12:07.960438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10385d000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103adc460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10583c5b0>]}
+[0m15:12:07.960676 [debug] [MainThread]: Flushing usage events
+[0m15:12:08.160242 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:13.798412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108079030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b41540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b41c00>]}
+
+
+============================== 15:12:13.800034 | 02b5e3e9-34f5-4758-b48d-152ccd3a10cf ==============================
+[0m15:12:13.800034 [info ] [MainThread]: Running with dbt=1.10.4
+[0m15:12:13.800287 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mahmoud/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:13.971762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bbaafe0>]}
+[0m15:12:13.999263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a8b100>]}
+[0m15:12:13.999658 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m15:12:14.064151 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m15:12:14.147339 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:12:14.147553 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:12:14.180529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c48dae0>]}
+[0m15:12:14.241073 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:12:14.241890 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:12:14.247831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c404a30>]}
+[0m15:12:14.248035 [info ] [MainThread]: Found 8 models, 1 seed, 3 data tests, 3 sources, 644 macros
+[0m15:12:14.248198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c404880>]}
+[0m15:12:14.248960 [info ] [MainThread]: 
+[0m15:12:14.249114 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:12:14.249236 [info ] [MainThread]: 
+[0m15:12:14.249437 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:12:14.251716 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB'
+[0m15:12:14.251967 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB'
+[0m15:12:14.272315 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB"
+[0m15:12:14.272589 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB"
+[0m15:12:14.272803 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB: show terse schemas in database ACTIVITY_LOGS_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB"} */
+[0m15:12:14.272970 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB: show terse schemas in database ACTIVITY_LOGS_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB"} */
+[0m15:12:14.273118 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:14.273241 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:14.672074 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.399 seconds
+[0m15:12:14.814400 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.541 seconds
+[0m15:12:14.822815 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB, now list_ACTIVITY_LOGS_DB_STG)
+[0m15:12:14.824422 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB, now list_ACTIVITY_LOGS_DB_RAW)
+[0m15:12:14.834040 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_MART'
+[0m15:12:14.848559 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_STG"
+[0m15:12:14.851812 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_RAW"
+[0m15:12:14.856010 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_MART"
+[0m15:12:14.856382 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_STG: show objects in ACTIVITY_LOGS_DB.STG
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_STG"} */;
+[0m15:12:14.856691 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_RAW: show objects in ACTIVITY_LOGS_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_RAW"} */;
+[0m15:12:14.856980 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_MART: show objects in ACTIVITY_LOGS_DB.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_MART"} */;
+[0m15:12:14.859276 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:14.956641 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.099 seconds
+[0m15:12:14.957682 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.100 seconds
+[0m15:12:15.255949 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.396 seconds
+[0m15:12:15.264468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d07b4f0>]}
+[0m15:12:15.271048 [debug] [Thread-1 (]: Began running node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:15.272304 [info ] [Thread-1 (]: 1 of 7 START sql table model STG.stg_activity_logs_flattened ................... [RUN]
+[0m15:12:15.273301 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_STG, now model.dbt_service.stg_activity_logs_flattened)
+[0m15:12:15.274012 [debug] [Thread-1 (]: Began compiling node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:15.290302 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_service.stg_activity_logs_flattened"
+[0m15:12:15.292270 [debug] [Thread-1 (]: Began executing node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:15.317745 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_service.stg_activity_logs_flattened"
+[0m15:12:15.319605 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_service.stg_activity_logs_flattened"
+[0m15:12:15.319928 [debug] [Thread-1 (]: On model.dbt_service.stg_activity_logs_flattened: create or replace transient table ACTIVITY_LOGS_DB.STG.stg_activity_logs_flattened
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT
+        *
+    FROM ACTIVITY_LOGS_DB.RAW.raw_activity_logs
+),
+
+/* -- Flatten the JSON structure to extract relevant fields
+   -- Redact PII Data */
+
+flattened_data AS (
+    SELECT 
+      flattened.value:company_id::STRING AS company_id,
+      md5(flattened.value:admin_first_name::STRING) AS admin_first_name_redacted,
+      md5(flattened.value:admin_last_name::STRING) AS admin_last_name_redacted,
+      md5(flattened.value:admin_email::STRING) AS admin_email_redacted,
+      md5(flattened.value:ip_address::STRING) AS ip_address_redacted,
+      flattened.value:country_code::STRING AS country_code,
+      flattened.value:country_name::STRING AS country_name,
+      flattened.value:date_enrolled::TIMESTAMP_NTZ AS date_enrolled,
+
+      -- Flattened properties array inside each JSON object
+      properties.value:device_id::STRING AS device_id,
+      properties.value:device_os::STRING AS device_os,
+      properties.value:app_bundle_id::STRING AS app_bundle_id,
+      properties.value:app_version::STRING AS app_version,
+      current_timestamp() AS ingested_at_utc
+    FROM source_data,
+    LATERAL FLATTEN(input => VALUE) AS flattened,
+    LATERAL FLATTEN(input => flattened.value:properties, outer => TRUE) AS properties
+)
+
+SELECT * FROM flattened_data
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_service.stg_activity_logs_flattened"} */;
+[0m15:12:16.133378 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.813 seconds
+[0m15:12:16.174833 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d380bb0>]}
+[0m15:12:16.175983 [info ] [Thread-1 (]: 1 of 7 OK created sql table model STG.stg_activity_logs_flattened .............. [[32mSUCCESS 1[0m in 0.90s]
+[0m15:12:16.176589 [debug] [Thread-1 (]: Finished running node model.dbt_service.stg_activity_logs_flattened
+[0m15:12:16.177562 [debug] [Thread-3 (]: Began running node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:16.178107 [info ] [Thread-3 (]: 2 of 7 START sql table model STG.stg_activity_logs_quarantined ................. [RUN]
+[0m15:12:16.178608 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_MART, now model.dbt_service.stg_activity_logs_quarantined)
+[0m15:12:16.178971 [debug] [Thread-3 (]: Began compiling node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:16.224988 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_service.stg_activity_logs_quarantined"
+[0m15:12:16.225646 [debug] [Thread-3 (]: Began executing node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:16.227297 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_service.stg_activity_logs_quarantined"
+[0m15:12:16.228061 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_service.stg_activity_logs_quarantined"
+[0m15:12:16.228264 [debug] [Thread-3 (]: On model.dbt_service.stg_activity_logs_quarantined: create or replace transient table ACTIVITY_LOGS_DB.STG.stg_activity_logs_quarantined
+    
+    
+    
+    as (
+
+WITH 
+flattened AS (
+    SELECT
+        *
+    FROM ACTIVITY_LOGS_DB.STG.stg_activity_logs_flattened
+),
+quarantine_seed AS (
+    SELECT
+        *
+    FROM ACTIVITY_LOGS_DB.RAW.quarantine_seed
+),
+
+/* -- Select null company_id to quarantine the data
+   -- Redact PII Data */
+
+quarantined_logs AS (
+    SELECT *
+    FROM flattened
+    WHERE company_id IS NULL
+       OR company_id IN (SELECT company_id FROM quarantine_seed)
+)
+
+-- Final result
+SELECT *
+FROM quarantined_logs
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_service.stg_activity_logs_quarantined"} */;
+[0m15:12:16.953234 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.724 seconds
+[0m15:12:16.960595 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107901270>]}
+[0m15:12:16.962348 [info ] [Thread-3 (]: 2 of 7 OK created sql table model STG.stg_activity_logs_quarantined ............ [[32mSUCCESS 1[0m in 0.78s]
+[0m15:12:16.963810 [debug] [Thread-3 (]: Finished running node model.dbt_service.stg_activity_logs_quarantined
+[0m15:12:16.965478 [debug] [Thread-2 (]: Began running node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:16.966652 [info ] [Thread-2 (]: 3 of 7 START sql table model STG.stg_activity_logs_cleaned ..................... [RUN]
+[0m15:12:16.967568 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_RAW, now model.dbt_service.stg_activity_logs_cleaned)
+[0m15:12:16.968427 [debug] [Thread-2 (]: Began compiling node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:16.976371 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_service.stg_activity_logs_cleaned"
+[0m15:12:16.978033 [debug] [Thread-2 (]: Began executing node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:16.983094 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_service.stg_activity_logs_cleaned"
+[0m15:12:16.985579 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_service.stg_activity_logs_cleaned"
+[0m15:12:16.986120 [debug] [Thread-2 (]: On model.dbt_service.stg_activity_logs_cleaned: create or replace transient table ACTIVITY_LOGS_DB.STG.stg_activity_logs_cleaned
+    
+    
+    
+    as (
+
+/* -- Select not null company_id
+             date_enrolled converted to 
+             California timezoned  */
+
+WITH 
+quarantine_data AS (
+    SELECT
+        *
+    FROM ACTIVITY_LOGS_DB.STG.stg_activity_logs_quarantined
+),
+cleaned_logs AS (
+   SELECT  
+          company_id,
+          admin_first_name_redacted,
+          admin_last_name_redacted,
+          admin_email_redacted,
+          ip_address_redacted,
+          country_code,
+          country_name,
+          CONVERT_TIMEZONE('UTC', 'America/Los_Angeles', date_enrolled) as date_enrolled,
+          'America/Los_Angeles' AS date_enrolled_timezone,
+          device_id,
+          device_os,
+          app_bundle_id,
+          app_version
+     FROM ACTIVITY_LOGS_DB.STG.stg_activity_logs_flattened
+    WHERE company_id IS NOT NULL
+      AND NOT EXISTS (
+              SELECT 1
+                FROM quarantine_data
+               WHERE quarantine_data.company_id = stg_activity_logs_flattened.company_id
+        )
+)
+-- Final cleaned result
+SELECT *
+FROM cleaned_logs
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_service.stg_activity_logs_cleaned"} */;
+[0m15:12:17.772153 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.785 seconds
+[0m15:12:17.778744 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d1e2470>]}
+[0m15:12:17.780690 [info ] [Thread-2 (]: 3 of 7 OK created sql table model STG.stg_activity_logs_cleaned ................ [[32mSUCCESS 1[0m in 0.81s]
+[0m15:12:17.782325 [debug] [Thread-2 (]: Finished running node model.dbt_service.stg_activity_logs_cleaned
+[0m15:12:17.784582 [debug] [Thread-4 (]: Began running node model.dbt_service.total_companies_march_android
+[0m15:12:17.785401 [debug] [Thread-3 (]: Began running node model.dbt_service.total_devices_daily_april
+[0m15:12:17.785999 [debug] [Thread-1 (]: Began running node model.dbt_service.total_devices_eu_north_america
+[0m15:12:17.786583 [debug] [Thread-2 (]: Began running node model.dbt_service.total_devices_oracle_app
+[0m15:12:17.787270 [info ] [Thread-4 (]: 4 of 7 START sql table model MART.total_companies_march_android ................ [RUN]
+[0m15:12:17.788160 [info ] [Thread-3 (]: 5 of 7 START sql table model MART.total_devices_daily_april .................... [RUN]
+[0m15:12:17.788946 [info ] [Thread-1 (]: 6 of 7 START sql table model MART.total_devices_eu_north_america ............... [RUN]
+[0m15:12:17.789727 [info ] [Thread-2 (]: 7 of 7 START sql table model MART.total_devices_oracle_app ..................... [RUN]
+[0m15:12:17.790614 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_service.total_companies_march_android'
+[0m15:12:17.791275 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_service.stg_activity_logs_quarantined, now model.dbt_service.total_devices_daily_april)
+[0m15:12:17.791905 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_service.stg_activity_logs_flattened, now model.dbt_service.total_devices_eu_north_america)
+[0m15:12:17.792416 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_service.stg_activity_logs_cleaned, now model.dbt_service.total_devices_oracle_app)
+[0m15:12:17.792912 [debug] [Thread-4 (]: Began compiling node model.dbt_service.total_companies_march_android
+[0m15:12:17.793403 [debug] [Thread-3 (]: Began compiling node model.dbt_service.total_devices_daily_april
+[0m15:12:17.793855 [debug] [Thread-1 (]: Began compiling node model.dbt_service.total_devices_eu_north_america
+[0m15:12:17.794243 [debug] [Thread-2 (]: Began compiling node model.dbt_service.total_devices_oracle_app
+[0m15:12:17.800806 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_service.total_companies_march_android"
+[0m15:12:17.807208 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_service.total_devices_daily_april"
+[0m15:12:17.811746 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_service.total_devices_eu_north_america"
+[0m15:12:17.815315 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_service.total_devices_oracle_app"
+[0m15:12:17.816367 [debug] [Thread-3 (]: Began executing node model.dbt_service.total_devices_daily_april
+[0m15:12:17.818998 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_service.total_devices_daily_april"
+[0m15:12:17.819438 [debug] [Thread-4 (]: Began executing node model.dbt_service.total_companies_march_android
+[0m15:12:17.819836 [debug] [Thread-1 (]: Began executing node model.dbt_service.total_devices_eu_north_america
+[0m15:12:17.820173 [debug] [Thread-2 (]: Began executing node model.dbt_service.total_devices_oracle_app
+[0m15:12:17.822593 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_service.total_companies_march_android"
+[0m15:12:17.825743 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_service.total_devices_eu_north_america"
+[0m15:12:17.827976 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_service.total_devices_oracle_app"
+[0m15:12:17.828764 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_service.total_devices_daily_april"
+[0m15:12:17.829351 [debug] [Thread-3 (]: On model.dbt_service.total_devices_daily_april: create or replace transient table ACTIVITY_LOGS_DB.MART.total_devices_daily_april
+    
+    
+    
+    as (
+-- This model calculates the total number of unique devices enrolled in the system
+-- for the month of April 2025, based on the date_enrolled field in the activity logs.
+SELECT
+       DATE(date_enrolled) AS enrollment_date,
+       COUNT(DISTINCT device_id) AS total_devices
+  FROM ACTIVITY_LOGS_DB.STG.stg_activity_logs_cleaned
+ WHERE DATE_TRUNC('month', date_enrolled) = '2025-04-01'
+ GROUP BY 1
+ ORDER BY 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_service.total_devices_daily_april"} */;
+[0m15:12:17.830066 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_service.total_companies_march_android"
+[0m15:12:17.830683 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_service.total_devices_eu_north_america"
+[0m15:12:17.831240 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_service.total_devices_oracle_app"
+[0m15:12:17.831680 [debug] [Thread-4 (]: On model.dbt_service.total_companies_march_android: create or replace transient table ACTIVITY_LOGS_DB.MART.total_companies_march_android
+    
+    
+    
+    as (
+-- This model calculates the total number of companies enrolled in the system
+-- for the month of March 2025, specifically for those using Android 4.4
+SELECT
+       COUNT(DISTINCT company_id) AS companies_enrolled_with_android_44
+  FROM ACTIVITY_LOGS_DB.STG.stg_activity_logs_cleaned
+ WHERE DATE_TRUNC('month', date_enrolled) = '2025-03-01'
+   AND device_os ILIKE 'Android 4.4%'
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_service.total_companies_march_android"} */;
+[0m15:12:17.832212 [debug] [Thread-1 (]: On model.dbt_service.total_devices_eu_north_america: create or replace transient table ACTIVITY_LOGS_DB.MART.total_devices_eu_north_america
+    
+    
+    
+    as (
+-- This model calculates the total number of devices enrolled in the system
+-- specifically in the European Union and North America regions.
+-- It counts distinct device IDs based on the country name in the activity logs.
+SELECT
+       COUNT(DISTINCT device_id) AS devices_in_eu_and_na
+  FROM ACTIVITY_LOGS_DB.STG.stg_activity_logs_cleaned
+ WHERE lower(country_name) IN (
+       -- EU countries
+       'france', 'germany', 'italy', 'spain', 'netherlands', 'sweden', 'poland',
+       'belgium', 'austria', 'denmark', 'finland', 'ireland', 'portugal',
+       -- North America
+       'united states', 'canada', 'mexico'
+)
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_service.total_devices_eu_north_america"} */;
+[0m15:12:17.832782 [debug] [Thread-2 (]: On model.dbt_service.total_devices_oracle_app: create or replace transient table ACTIVITY_LOGS_DB.MART.total_devices_oracle_app
+    
+    
+    
+    as (
+-- This model calculates the total number of devices enrolled in the system
+-- specifically for Oracle applications.
+SELECT
+       COUNT(DISTINCT device_id) AS total_oracle_devices
+  FROM ACTIVITY_LOGS_DB.STG.stg_activity_logs_cleaned
+ WHERE lower(app_bundle_id) LIKE '%oracle%'
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_service.total_devices_oracle_app"} */;
+[0m15:12:17.833114 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:12:18.594467 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.760 seconds
+[0m15:12:18.598241 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.767 seconds
+[0m15:12:18.599913 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.766 seconds
+[0m15:12:18.604712 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c40caf0>]}
+[0m15:12:18.608337 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c40e710>]}
+[0m15:12:18.611071 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4d5c90>]}
+[0m15:12:18.612255 [info ] [Thread-1 (]: 6 of 7 OK created sql table model MART.total_devices_eu_north_america .......... [[32mSUCCESS 1[0m in 0.81s]
+[0m15:12:18.613288 [info ] [Thread-3 (]: 5 of 7 OK created sql table model MART.total_devices_daily_april ............... [[32mSUCCESS 1[0m in 0.82s]
+[0m15:12:18.614382 [info ] [Thread-2 (]: 7 of 7 OK created sql table model MART.total_devices_oracle_app ................ [[32mSUCCESS 1[0m in 0.82s]
+[0m15:12:18.616168 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.783 seconds
+[0m15:12:18.616979 [debug] [Thread-1 (]: Finished running node model.dbt_service.total_devices_eu_north_america
+[0m15:12:18.617759 [debug] [Thread-3 (]: Finished running node model.dbt_service.total_devices_daily_april
+[0m15:12:18.618445 [debug] [Thread-2 (]: Finished running node model.dbt_service.total_devices_oracle_app
+[0m15:12:18.620907 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02b5e3e9-34f5-4758-b48d-152ccd3a10cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d079ed0>]}
+[0m15:12:18.622649 [info ] [Thread-4 (]: 4 of 7 OK created sql table model MART.total_companies_march_android ........... [[32mSUCCESS 1[0m in 0.83s]
+[0m15:12:18.623476 [debug] [Thread-4 (]: Finished running node model.dbt_service.total_companies_march_android
+[0m15:12:18.625288 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:18.625922 [debug] [MainThread]: Connection 'model.dbt_service.total_devices_eu_north_america' was left open.
+[0m15:12:18.626264 [debug] [MainThread]: On model.dbt_service.total_devices_eu_north_america: Close
+[0m15:12:18.757160 [debug] [MainThread]: Connection 'model.dbt_service.total_devices_oracle_app' was left open.
+[0m15:12:18.758150 [debug] [MainThread]: On model.dbt_service.total_devices_oracle_app: Close
+[0m15:12:18.890153 [debug] [MainThread]: Connection 'model.dbt_service.total_devices_daily_april' was left open.
+[0m15:12:18.891498 [debug] [MainThread]: On model.dbt_service.total_devices_daily_april: Close
+[0m15:12:19.040929 [debug] [MainThread]: Connection 'model.dbt_service.total_companies_march_android' was left open.
+[0m15:12:19.042049 [debug] [MainThread]: On model.dbt_service.total_companies_march_android: Close
+[0m15:12:19.175515 [info ] [MainThread]: 
+[0m15:12:19.176957 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 4.93 seconds (4.93s).
+[0m15:12:19.181021 [debug] [MainThread]: Command end result
+[0m15:12:19.228286 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:12:19.229798 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:12:19.234652 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/run_results.json
+[0m15:12:19.234888 [info ] [MainThread]: 
+[0m15:12:19.235165 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:12:19.235388 [info ] [MainThread]: 
+[0m15:12:19.235579 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m15:12:19.236881 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.4706354, "process_in_blocks": "0", "process_kernel_time": 0.180382, "process_mem_max_rss": "159137792", "process_out_blocks": "0", "process_user_time": 1.608229}
+[0m15:12:19.237079 [debug] [MainThread]: Command `dbt run` succeeded at 15:12:19.237039 after 5.47 seconds
+[0m15:12:19.237261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108079030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bbab4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd1cfa0>]}
+[0m15:12:19.237440 [debug] [MainThread]: Flushing usage events
+[0m15:12:19.478382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:22.558351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e79030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10794fb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10794f460>]}
+
+
+============================== 15:12:22.559971 | dbcd718d-6438-4a27-b992-2c1107e35e6e ==============================
+[0m15:12:22.559971 [info ] [MainThread]: Running with dbt=1.10.4
+[0m15:12:22.560231 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/logs', 'profiles_dir': '/Users/mahmoud/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt source freshness', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:22.730639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dbcd718d-6438-4a27-b992-2c1107e35e6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107909ea0>]}
+[0m15:12:22.757581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dbcd718d-6438-4a27-b992-2c1107e35e6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1186be740>]}
+[0m15:12:22.757925 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m15:12:22.821325 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m15:12:22.904031 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:12:22.904260 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:12:22.936832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dbcd718d-6438-4a27-b992-2c1107e35e6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a28dc30>]}
+[0m15:12:22.995942 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:12:22.996854 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:12:23.002765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dbcd718d-6438-4a27-b992-2c1107e35e6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a28d6c0>]}
+[0m15:12:23.002976 [info ] [MainThread]: Found 8 models, 1 seed, 3 data tests, 3 sources, 644 macros
+[0m15:12:23.003129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dbcd718d-6438-4a27-b992-2c1107e35e6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a28d630>]}
+[0m15:12:23.003817 [info ] [MainThread]: 
+[0m15:12:23.003969 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:12:23.004089 [info ] [MainThread]: 
+[0m15:12:23.004290 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:12:23.006606 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_RAW'
+[0m15:12:23.007130 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_MART'
+[0m15:12:23.007390 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ACTIVITY_LOGS_DB_STG'
+[0m15:12:23.032340 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_RAW"
+[0m15:12:23.032585 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_MART"
+[0m15:12:23.032818 [debug] [ThreadPool]: Using snowflake connection "list_ACTIVITY_LOGS_DB_STG"
+[0m15:12:23.032965 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_RAW: show objects in ACTIVITY_LOGS_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_RAW"} */;
+[0m15:12:23.033115 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_MART: show objects in ACTIVITY_LOGS_DB.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_MART"} */;
+[0m15:12:23.033260 [debug] [ThreadPool]: On list_ACTIVITY_LOGS_DB_STG: show objects in ACTIVITY_LOGS_DB.STG
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_ACTIVITY_LOGS_DB_STG"} */;
+[0m15:12:23.033389 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:23.033510 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:23.033635 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:23.542897 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.509 seconds
+[0m15:12:23.550678 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.517 seconds
+[0m15:12:23.556824 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.523 seconds
+[0m15:12:23.560312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dbcd718d-6438-4a27-b992-2c1107e35e6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119015f60>]}
+[0m15:12:23.561252 [info ] [MainThread]: Pulling freshness from warehouse metadata tables for 0 sources
+[0m15:12:23.565701 [debug] [Thread-1 (]: Began running node source.dbt_service.stg_activity_logs.stg_activity_logs_flattened
+[0m15:12:23.566461 [info ] [Thread-1 (]: 1 of 1 START freshness of stg_activity_logs.stg_activity_logs_flattened ........ [RUN]
+[0m15:12:23.567255 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ACTIVITY_LOGS_DB_RAW, now source.dbt_service.stg_activity_logs.stg_activity_logs_flattened)
+[0m15:12:23.567785 [debug] [Thread-1 (]: Began compiling node source.dbt_service.stg_activity_logs.stg_activity_logs_flattened
+[0m15:12:23.568278 [debug] [Thread-1 (]: Began executing node source.dbt_service.stg_activity_logs.stg_activity_logs_flattened
+[0m15:12:23.580983 [debug] [Thread-1 (]: Using snowflake connection "source.dbt_service.stg_activity_logs.stg_activity_logs_flattened"
+[0m15:12:23.581496 [debug] [Thread-1 (]: On source.dbt_service.stg_activity_logs.stg_activity_logs_flattened: select
+      max(ingested_at_utc) as max_loaded_at,
+      convert_timezone('UTC', current_timestamp()) as snapshotted_at
+    from ACTIVITY_LOGS_DB.stg.stg_activity_logs_flattened
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "default", "target_name": "dev", "node_id": "source.dbt_service.stg_activity_logs.stg_activity_logs_flattened"} */
+[0m15:12:23.771547 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.189 seconds
+[0m15:12:23.782007 [info ] [Thread-1 (]: 1 of 1 PASS freshness of stg_activity_logs.stg_activity_logs_flattened ......... [[32mPASS[0m in 0.21s]
+[0m15:12:23.783332 [debug] [Thread-1 (]: Finished running node source.dbt_service.stg_activity_logs.stg_activity_logs_flattened
+[0m15:12:23.786014 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:23.786563 [debug] [MainThread]: Connection 'source.dbt_service.stg_activity_logs.stg_activity_logs_flattened' was left open.
+[0m15:12:23.787058 [debug] [MainThread]: On source.dbt_service.stg_activity_logs.stg_activity_logs_flattened: Close
+[0m15:12:23.918904 [debug] [MainThread]: Connection 'list_ACTIVITY_LOGS_DB_MART' was left open.
+[0m15:12:23.920160 [debug] [MainThread]: On list_ACTIVITY_LOGS_DB_MART: Close
+[0m15:12:24.067073 [debug] [MainThread]: Connection 'list_ACTIVITY_LOGS_DB_STG' was left open.
+[0m15:12:24.067957 [debug] [MainThread]: On list_ACTIVITY_LOGS_DB_STG: Close
+[0m15:12:24.207698 [info ] [MainThread]: 
+[0m15:12:24.209045 [info ] [MainThread]: Finished running 1 source in 0 hours 0 minutes and 1.20 seconds (1.20s).
+[0m15:12:24.297995 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/manifest.json
+[0m15:12:24.298975 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/semantic_manifest.json
+[0m15:12:24.301633 [debug] [MainThread]: Wrote artifact FreshnessResult to /Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/target/sources.json
+[0m15:12:24.301780 [info ] [MainThread]: Done.
+[0m15:12:24.303145 [debug] [MainThread]: Resource report: {"command_name": "freshness", "command_success": true, "command_wall_clock_time": 1.7762502, "process_in_blocks": "0", "process_kernel_time": 0.147681, "process_mem_max_rss": "154746880", "process_out_blocks": "0", "process_user_time": 1.266187}
+[0m15:12:24.303367 [debug] [MainThread]: Command `dbt source freshness` succeeded at 15:12:24.303329 after 1.78 seconds
+[0m15:12:24.303548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e79030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2bf6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104696e60>]}
+[0m15:12:24.303721 [debug] [MainThread]: Flushing usage events
+[0m15:12:24.499401 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:31.774500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f8d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10501f640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10501ef80>]}
+
+
+============================== 15:12:31.776115 | 2354948d-eb23-4718-a316-264e5d2b8ac3 ==============================
+[0m15:12:31.776115 [info ] [MainThread]: Running with dbt=1.10.4
+[0m15:12:31.776376 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mahmoud/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/mahmoud/Workspace/interviews/kandji/kandji_homework/dbt_service/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:31.831777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2354948d-eb23-4718-a316-264e5d2b8ac3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e2b400>]}
+[0m15:12:31.839084 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.09655716, "process_in_blocks": "0", "process_kernel_time": 0.068427, "process_mem_max_rss": "105742336", "process_out_blocks": "0", "process_user_time": 0.634607}
+[0m15:12:31.839318 [debug] [MainThread]: Command `dbt clean` succeeded at 15:12:31.839273 after 0.10 seconds
+[0m15:12:31.839499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f8d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e2b400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e2bfa0>]}
+[0m15:12:31.839682 [debug] [MainThread]: Flushing usage events
+[0m15:12:32.049399 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,24 @@
+sources:
+  - name: stg_activity_logs
+    database: ACTIVITY_LOGS_DB
+    description: "This source contains flattened activity logs from the raw data."
+    schema: stg
+    tables:
+      - name: stg_activity_logs_flattened
+        description: "Flattened activity logs with sensitive information redacted."
+        config:
+          freshness:
+            warn_after: {count: 6, period: hour}
+            error_after: {count: 1, period: day}
+          loaded_at_field: ingested_at_utc
+      - name: stg_activity_logs_cleaned
+        description: Cleaned activity logs with sensitive information redacted according to our SLA
+        columns:
+          - name: company_id
+            tests:
+              - not_null
+              - unique
+          - name: date_enrolled
+            tests:
+              - not_null
+    
