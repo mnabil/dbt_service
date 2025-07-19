@@ -1,13 +1,13 @@
 default:
   outputs:
     dev:
-      account: "{{ secrets.SNOWFLAKE_ACCOUNT }}"
-      database: "{{ secrets.SNOWFLAKE_DB }}"
-      schema: "{{ secrets.SNOWFLAKE_SCHEMA }}"
-      password: "{{ secrets.SNOWFLAKE_PASSWORD }}"
-      role: "{{ secrets.SNOWFLAKE_ROLE }}"
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      database: "{{ env_var('SNOWFLAKE_DB') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
       threads: 4
       type: snowflake
-      user: "{{ secrets.SNOWFLAKE_USER }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
       warehouse: COMPUTE_WH
   target: dev
