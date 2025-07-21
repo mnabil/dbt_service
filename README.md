@@ -20,14 +20,11 @@ Configure your `~/.dbt/profiles.yaml` to connect using the `dev` profile or any 
 
 ## Install Dependencies
 
-Create and activate a virtual environment:
+Clone Repo & in your working Directory - Create and activate a virtual environment:
 
 ```bash
-python3.10 -m venv dbt_venv && source dbt_venv/bin/activate
+`python3.10 -m venv dbt_venv && soruce dbt_venv/bin/activate` and `pip install --pre dbt-core dbt-snowflake`
 ```
-# install dependencies
-
- in your working directory `python3.10 -m venv dbt_venv && soruce dbt_venv/bin/activate` and `pip install --pre dbt-core dbt-snowflake`
 
  `dbt deps` install package dependencies for dbt itself
 
