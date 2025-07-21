@@ -40,7 +40,7 @@ Clone Repo & in your working Directory - Create and activate a virtual environme
 # compile models
  `dbt compile`
 
-# run our and reflect into our snowflake data warehouse
+# run our models which will reflect into our snowflake data warehouse
  `dbt run`
 
 # test models
