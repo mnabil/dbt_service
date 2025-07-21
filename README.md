@@ -1,18 +1,30 @@
 # dbt_service
-Our dbt service which will extract our core data event logs ingesting our core user activity event logs and will deliver the following aggregates and analyses
 
-# connecting to snowflake
-configure your `~/.dbt/profiles.yaml` to connect to snowflake `dev` profile or profile our your choice
+This is our dbt service, responsible for ingesting core user activity event logs and delivering key aggregates and analyses.
 
-# models
+---
 
-RAW : contains Raw JSON records ingested data from S3 through a snowflake Stage
+## Connecting to Snowflake
 
-STG : contains our Staged data, flattened, quarantined & cleaned
+Configure your `~/.dbt/profiles.yaml` to connect using the `dev` profile or any profile of your choice.
 
-MART : containing our aggregations & reports for analyis
+---
 
+## Models
 
+- **RAW**: Contains raw JSON records ingested from S3 through a Snowflake stage.
+- **STG**: Contains staged data — flattened, quarantined, and cleaned.
+- **MART**: Contains aggregations and reports for analysis.
+
+---
+
+## Install Dependencies
+
+Create and activate a virtual environment:
+
+```bash
+python3.10 -m venv dbt_venv && source dbt_venv/bin/activate
+```
 # install dependencies
 
  in your working directory `python3.10 -m venv dbt_venv && soruce dbt_venv/bin/activate` and `pip install --pre dbt-core dbt-snowflake`
